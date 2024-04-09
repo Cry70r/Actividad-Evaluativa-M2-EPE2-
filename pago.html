@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago - Tienda Online</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container">
+            <h1 class="text-light">Tienda Online Actividad Evaluativa M2 (EPE2) IP Chile</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="regsesion.html">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="pago.html">Pago</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-center mb-4">Pagar</h2>
+                <form id="paymentForm">
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="expiryDate" class="form-label">Fecha de Expiración</label>
+                        <input type="text" class="form-control" id="expiryDate" name="expiryDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pagar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
